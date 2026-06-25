@@ -1,0 +1,97 @@
+.moonmonsters-screen {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  font-family: VT323, monospace;
+  color: #00f000;
+  padding: 30px 40px;
+}
+
+.moonmonsters-loading {
+  color: #00f000;
+  font-family: VT323, monospace;
+  font-size: 2em;
+  padding: 40px;
+}
+
+.moonmonsters-back {
+  font-size: 1.3em;
+  color: #9a9a75;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.moonmonsters-back:hover {
+  color: #00f000;
+}
+
+.moonmonsters-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.moonmonsters-title {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  border-bottom: 1px solid #00f000;
+  padding-bottom: 10px;
+}
+
+.moonmonsters-section {
+  margin-bottom: 40px;
+}
+
+.moonmonsters-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 16px;
+  color: #00f000;
+  border-bottom: 1px solid #2a5c2a;
+  padding-bottom: 4px;
+}
+
+.monster-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.monster-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #111;
+  border: 1px solid #2a5c2a;
+  padding: 12px;
+  width: 130px;
+  cursor: pointer;
+  transition: border-color 0.15s, background 0.15s;
+}
+
+.monster-card:hover {
+  border-color: #00f000;
+  background: #1a1a1a;
+}
+
+.monster-card-image {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin-bottom: 8px;
+}
+
+.monster-card-name {
+  font-size: 1em;
+  text-align: center;
+  color: #00f000;
+  margin-bottom: 4px;
+  line-height: 1.2em;
+}
+
+.monster-card-spawn {
+  font-size: 1.1em;
+  color: #00f000;
+}
+
+.monster-card-spawn.zero {
+  color: #2a5c2a;
+}

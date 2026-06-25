@@ -1,0 +1,118 @@
+.overview-screen {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  font-family: VT323, monospace;
+  color: #00f000;
+  padding: 30px 40px;
+}
+
+.overview-loading {
+  color: #00f000;
+  font-family: VT323, monospace;
+  font-size: 2em;
+  padding: 40px;
+}
+
+.overview-back {
+  font-size: 1.3em;
+  color: #9a9a75;
+  cursor: pointer;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+.overview-back:hover {
+  color: #00f000;
+}
+
+.overview-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.overview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.overview-title {
+  font-size: 3em;
+  color: #00f000;
+}
+
+.overview-badges {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.overview-hazard {
+  font-size: 1.5em;
+  color: #00f000;
+}
+
+.overview-price {
+  font-size: 1.5em;
+  color: #00f000;
+}
+
+.overview-image {
+  width: 100%;
+  border: 2px solid #00f000;
+  margin-bottom: 24px;
+  image-rendering: pixelated;
+}
+
+.overview-stats {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+  border-top: 1px solid #00f000;
+  border-bottom: 1px solid #00f000;
+  padding: 16px 0;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 1.17em;
+  color: #9a9a75;
+}
+
+.stat-value {
+  font-size: 1.95em;
+  color: #00f000;
+}
+
+.overview-description {
+  margin-bottom: 30px;
+  line-height: 1.8em;
+  font-size: 1.56em;
+}
+
+.overview-description p {
+  margin-bottom: 6px;
+}
+
+.overview-inhabitants-btn {
+  background: transparent;
+  border: 1px solid #00f000;
+  color: #00f000;
+  font-family: VT323, monospace;
+  font-size: 1.5em;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
+
+.overview-inhabitants-btn:hover {
+  background: #00f000;
+  color: #000;
+}

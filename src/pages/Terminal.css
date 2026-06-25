@@ -1,0 +1,53 @@
+.terminal-screen {
+  min-height: 100vh;
+  background-color: #000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 40px;
+  cursor: text;
+}
+
+.terminal-body {
+  font-family: VT323, monospace;
+  color: #00f000;
+  font-size: 1.4em;
+  line-height: 1.6em;
+  max-width: 800px;
+  width: 100%;
+}
+
+.terminal-line {
+  white-space: pre;
+}
+
+.terminal-error {
+  color: #ff4444;
+  margin-top: 8px;
+}
+
+.terminal-input-row {
+  display: flex;
+  align-items: center;
+  margin-top: 12px;
+}
+
+.terminal-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #00f000;
+  font-family: VT323, monospace;
+  font-size: 1em;
+  caret-color: #00f000;
+  width: 300px;
+}
+
+@keyframes terminal-cursor-blink {
+  from { visibility: hidden; }
+}
+
+.terminal-cursor {
+  animation: terminal-cursor-blink 0.8s steps(2, end) infinite;
+  margin-left: 2px;
+}

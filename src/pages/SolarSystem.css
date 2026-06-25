@@ -1,0 +1,91 @@
+.solar-system {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: #000;
+  overflow: hidden;
+  font-family: VT323, monospace;
+  top: 0;
+  left: 0;
+}
+
+/* Stars */
+.star {
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  opacity: 0;
+  animation: drift linear infinite;
+}
+
+@keyframes drift {
+  0%   { transform: translateY(0px);    opacity: 0;   }
+  15%  { opacity: 0.8; }
+  50%  { transform: translateY(-11px);  opacity: 1;   }
+  85%  { opacity: 0.8; }
+  100% { transform: translateY(-22px);  opacity: 0;   }
+}
+
+/* Moon positioning */
+.moon-wrapper {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  z-index: 10;
+}
+
+/* Moon icon */
+.moon-icon {
+  width: 80px;
+  height: 80px;
+  image-rendering: pixelated;
+  transition: transform 0.2s ease;
+}
+
+.moon-hovered {
+  transform: scale(1.2);
+}
+
+/* Labels */
+.moon-label {
+  color: #00f000;
+  font-size: 1.425em;
+  margin-top: 6px;
+  text-align: center;
+  text-shadow: 0 0 8px #00f000;
+}
+
+.moon-price {
+  color: #00f000;
+  font-size: 1.275em;
+  text-align: center;
+}   
+
+/* Hazard popup */
+.hazard-popup {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #000;
+  border: 2px solid #00f000;
+  color: #00f000;
+  padding: 6px 16px;
+  font-size: 1.5em;
+  white-space: nowrap;
+  margin-bottom: 8px;
+  pointer-events: none;
+}
+
+.hazard-popup::after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 5px solid transparent;
+  border-top-color: #00f000;
+}

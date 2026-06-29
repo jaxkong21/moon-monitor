@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
-import { getMoon, getMonstersByMoon } from '../api/client'
-import './MoonMonsters.css'
 import { getMoon, getMonstersByMoon, API } from '../api/client'
+import './MoonMonsters.css'
 
 function MonsterCard({ monster, onClick }) {
   return (

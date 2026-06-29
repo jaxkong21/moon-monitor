@@ -56,7 +56,7 @@ function MonsterPage() {
         <div className="monster-page-header">
           <img
             className="monster-page-image"
-            src={`http://127.0.0.1:5000/proxy-image?url=${encodeURIComponent(monster.image_path)}`}
+            src={`${API}/proxy-image?url=${encodeURIComponent(monster.monster_image)}`}
             alt={monster.name}
           />
           <div className="monster-page-header-info">

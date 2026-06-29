@@ -1,4 +1,4 @@
-const API = 'https://lethal-api-production.up.railway.app'
+export const API = 'https://lethal-api-production.up.railway.app'
 
 export async function getMoons() {
     const response = await fetch(`${API}/moons`)

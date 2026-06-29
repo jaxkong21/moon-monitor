@@ -1,8 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate, useLocation } from 'react-router-dom'
-import { getMonster } from '../api/client'
 import './MonsterPage.css'
-import { getMoon, getMonstersByMoon, API } from '../api/client'
+import { getMonster, API } from '../api/client'
 
 const MOON_ORDER = [
   { key: '41-Experimentation', label: '41-Experimentation' },
@@ -57,7 +56,7 @@ function MonsterPage() {
         <div className="monster-page-header">
           <img
             className="monster-page-image"
-            src={`${API}/proxy-image?url=${encodeURIComponent(monster.monster_image)}`}
+            src={`${API}/proxy-image?url=${encodeURIComponent(monster.image_path)}`}
             alt={monster.name}
           />
           <div className="monster-page-header-info">

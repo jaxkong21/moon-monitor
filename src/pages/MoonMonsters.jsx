@@ -8,7 +8,7 @@ function MonsterCard({ monster, onClick }) {
     <div className="monster-card" onClick={onClick}>
       <img
         className="monster-card-image"
-        src={`http://127.0.0.1:5000/proxy-image?url=${encodeURIComponent(monster.monster_image)}`}
+        src={`${API}/proxy-image?url=${encodeURIComponent(monster.monster_image)}`}
         alt={monster.name}
         />
       <div className="monster-card-name">{monster.name}</div>
